@@ -16,46 +16,19 @@ let readMore = more.repeat(850)
 let taguser = conn.getName(m.sender)
 let user = global.db.data.users[m.sender]
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let menu = `*〲🝯☃️⁘ ${user.registered === true ? user.name : `👉 ${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'verificar nombre.edad' : 'verify name.age'}`} ◈*
- *╰🜙🜙🜙🜙《 @${m.sender.split("@")[0]} 》*
+let menu = `*《 @${m.sender.split("@")[0]} 》*
 
 *╭┈🎄┈🎄┈🎄┈🎄┈🎄┈🎄┈╮*
 *┆⠸⋑* ${packname}
-*┆❄️ 🝆 ${vs} ㎇ 🝆 ❄️*
+*┆ 🝆 ${vs} ㎇ 🝆 *
 *╰┈🎄┈🎄┈🎄┈🎄┈🎄┈🎄┈╯*${conn.user.jid == global.conn.user.jid ? '' : `🌨️🐈🌨️ *>>* 𝗚𝗕 - 𝗦𝗨𝗕 𝗕𝗢𝗧 ⇢ *@${global.conn.user.jid.split`@`[0]}*`}
 
 *╭●⇢ 🌟 ${lenguajeGB.smsMenuTotal1()} 🌟*
 *┆*
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'creadora' : 'owner'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'contacto' : 'contact'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'cuentasgb' : 'account'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'donar' : 'donate'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'codigo' : 'sc'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'gruposgb' : 'groupsgb'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'instalarbot' : 'installbot'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'grupolista' : 'grouplist'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'estado' : 'status'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'velocidad' : 'ping'}\`\`\`
+*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'creador' : 'owner'}\`\`\`
+*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'estadobot' : 'status'}\`\`\`
 *┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'infogata' : 'infobot'}\`\`\`
 *┆* \`\`\`${lenguajeGB.lenguaje() == 'es' ? 'términos y condiciones' : 'terms'}\`\`\`
-*┆*
-*╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
-
-*╭●⇢ 🪅 ${lenguajeGB.smsMenuTotal2()} 🪅*
-*┆*
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'serbot' : 'jadibot'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'bots' : 'subsbots'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'pausarsb' : 'pausesb'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'eliminarsesion' : 'delsession'}\`\`\`
-*┆*
-*╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
-
-*╭●⇢ 🔎 ${lenguajeGB.smsMenuTotal3()} 🔍*
-*┆*
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'google «texto»' : 'googlef «text»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'bot «texto»' : 'simsimi «text»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'ia «texto»' : 'chatgpt «text»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'yts «texto»' : 'yts «text»'}\`\`\`
 *┆*
 *╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
 
@@ -122,62 +95,10 @@ let menu = `*〲🝯☃️⁘ ${user.registered === true ? user.name : `👉 ${u
 *┆*
 *╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
 
-*╭●⇢ 🩵 ${lenguajeGB.smsMenuTotal8()} 🩵*
-*┆*
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarbass' : 'editbass'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarvibra' : 'editvibra'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarblown' : 'editblown'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editardeep' : 'editdeep'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarearrape' : 'editearrape'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarfast' : 'editfast'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarfat' : 'editfat'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarnightcore' : 'editnightcore'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarrobot' : 'editrobot'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarslow' : 'editslow'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editarsmooth' : 'editsmooth'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editartupai' : 'edittupai'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'editaraudio8d' : 'editaudio8d'}\`\`\`
-*┆*
-*╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
-
-*╭●⇢ 🍄 ${lenguajeGB.smsMenuTotal9()} 🍄*
-*┆*
-*┆* \`\`\`${usedPrefix}bass\`\`\`
-*┆* \`\`\`${usedPrefix}blown\`\`\`
-*┆* \`\`\`${usedPrefix}deep\`\`\`
-*┆* \`\`\`${usedPrefix}earrape\`\`\`
-*┆* \`\`\`${usedPrefix}fast\`\`\`
-*┆* \`\`\`${usedPrefix}fat\`\`\`
-*┆* \`\`\`${usedPrefix}nightcore\`\`\`
-*┆* \`\`\`${usedPrefix}reverse\`\`\`
-*┆* \`\`\`${usedPrefix}robot\`\`\`
-*┆* \`\`\`${usedPrefix}slow\`\`\`
-*┆* \`\`\`${usedPrefix}smooth\`\`\`
-*┆* \`\`\`${usedPrefix}tupai\`\`\`
-*┆* \`\`\`${usedPrefix}audio8d\`\`\`
-*┆* \`\`\`${usedPrefix}echo\`\`\`
-*┆* \`\`\`${usedPrefix}distortion\`\`\`
-*┆* \`\`\`${usedPrefix}pitch\`\`\`
-*┆* \`\`\`${usedPrefix}reverb\`\`\`
-*┆* \`\`\`${usedPrefix}flanger\`\`\`
-*┆* \`\`\`${usedPrefix}apulsator\`\`\`
-*┆* \`\`\`${usedPrefix}tremolo\`\`\`
-*┆* \`\`\`${usedPrefix}chorus\`\`\`
-*┆*
-*╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
-
 *╭●⇢ ⚙️ ${lenguajeGB.smsMenuTotal10()} ⚙️*
 *┆*
 *┆* \`\`\`on\`\`\`
 *┆* \`\`\`off\`\`\`
-*┆*
-*╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
-
-*╭●⇢ 💌 ${lenguajeGB.smsMenuTotal11()} 💌*
-*┆*
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'verificar «nombre.edad»' : 'verify «name.age»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'anulareg «id de registro»' : 'unreg «id registration»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'idregistro' : 'idregister'}\`\`\`
 *┆*
 *╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
 
