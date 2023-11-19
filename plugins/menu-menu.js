@@ -32,28 +32,6 @@ let menu = `*《 @${m.sender.split("@")[0]} 》*
 *┆*
 *╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
 
-*╭●⇢ 🎁${lenguajeGB.smsMenuTotal4()} 🎁*
-*┆*
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'imagen «texto»' : 'gimage «text»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'facebook «enlace»' : 'facebookdl «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'mediafire «enlace»' : 'mediafiredl «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'play «nombre o enlace»' : 'play «name»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'yta «enlace»' : 'yta «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'ytv «enlace»' : 'ytv «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'ytmax «enlace»' : 'ytmax «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'ytadoc «enlace»' : 'ytadoc «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'ytvdoc «enlace»' : 'ytvdoc «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'ytmaxdoc «enlace»' : 'ytmaxdoc «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'tiktok «enlace»' : 'tkdl «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'openiamage «texto»' : 'dalle «text»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'midjourney «texto»' : 'openjourney «text»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'spotify «texto o enlace»' : 'spotify «text or link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'spotifysearch «texto»' : 'spotifysearch «text»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'instagram «enlace»' : 'instagram «link»'}\`\`\`
-*┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'twitterx «enlace»' : 'twitterx «link»'}\`\`\`
-*┆*
-*╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
-
 *╭●⇢ ⚡ ${lenguajeGB.smsMenuTotal5()} ⚡*
 *┆*
 *┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'img «sticker»' : 'toimg «sticker»'}\`\`\`
