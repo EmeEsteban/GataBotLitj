@@ -17,18 +17,11 @@ const grupo = [nna, nn, nnn, nnnt, nnntt, nnnttt, nnnttt1, nnnttt2, nnnttt3, nnn
 frep = { contextInfo: { externalAdReply: {title: wm, body: lenguajeGB.smsCreApoyo(), sourceUrl: redesMenu.getRandom(), thumbnail: await(await fetch(gataMenu.getRandom())).buffer() }}}
 fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-const isCommand1 = /^(estado|status|estate|state|stado|stats|botstat(us)?)$/i.test(command)  
-const isCommand2 = /^(cuenta(s)?oficiales?|gataig|(cuentas|account)s?g?b|(ig)?gata|(cuentasgata))$/i.test(command)  
-const isCommand3 = /^(gata(bot)?groups?|grupos(ofc|degatabot|gb)|grupogb|groupsgb|gatagroups?|grupos|group(ofc|sofc))$/i.test(command) 
-const isCommand4 = /^(c(ó|o)digo|sc|git|script)$/i.test(command) 
-const isCommand5 = /^(instalar(gata)?bot|proceso(del)?bot|bot(install|proceso)|installbot)$/i.test(command) 
-const isCommand6 = /^(owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i.test(command) 
-const isCommand7 = /^(group(s|list|o(lista)?)|list(a)?(de)?grupo(s)?|grupolista)$/i.test(command) 
-const isCommand8 = /^(info(gata|bot)|informaci(ón|on)(gata|bot))$/i.test(command) 
-const isCommand9 = /^(contactos?|contacts?)$/i.test(command) 
-const isCommand10 = /^(ping|speed|velocidad|rapidez|velocity)$/i.test(command) 
-const isCommand11 = /^(dona(te|si)|donar|apoyar|paypal|donating|aportar)$/i.test(command) 
-const isCommand12 = /^(report|request|reporte|bugs|bug|reportowner|reportes|reportar)$/i.test(command) 
+const isCommand1 = /^(estadobot)$/i.test(command)    
+const isCommand6 = /^(creador)$/i.test(command) 
+const isCommand8 = /^(infobot))$/i.test(command) 
+const isCommand10 = /^(ping)$/i.test(command)  
+const isCommand12 = /^(reportes|reportar)$/i.test(command) 
 
 async function reportError(e) {
 await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
@@ -63,97 +56,7 @@ await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', estado, fkontak)
 reportError(e)
 }   
 break
-    
-case isCommand2:
-try{
-let media = './media/menus/Menu2.jpg'
-let str = `
-◎ *GITHUB*
-*${md}*\n
-◎ *INSTAGRAM*
-*${ig}*\n
-◎ *YOUTUBE*
-*${yt}*\n
-◎ *FACEBOOK*
-*${fb}*\n
-${lenguajeGB.smsOfc2()}`.trim() 
-await conn.sendFile(m.chat, media, 'gata.jpg', lenguajeGB.smsOfc1() + '\n\n' + str, fkontak)  
-} catch (e) {
-reportError(e)
-}    
-break
-    
-  case isCommand3:
-try{
-let str = `
-${lenguajeGB.smsGrupoOfc1()}
-_⭔ ${grupo[0]}_\n
-_⭔ ${grupo[1]}_\n
-_⭔ ${grupo[2]}_\n
-_⭔ ${grupo[3]}_\n
-_⭔ ${grupo[4]}_\n
-_⭔ ${grupo[5]}_\n\n
-${lenguajeGB.smsGrupoOfc2()}
-_⭔ ${grupo[6]}_\n
-_⭔ ${grupo[7]}_\n
-_⭔ ${grupo[8]}_\n
-_⭔ ${grupo[9]}_`.trim()
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', str, fkontak)   
-} catch (e) {
-reportError(e)
-}    
-break
-    
-case isCommand4:
-try{ 
-_package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', `*_${_package.homepage}_*\n\n` + lenguajeGB.smsPrivadoDonar(), fkontak)    
-} catch (e) {
-reportError(e)
-}    
-break
-    
-case isCommand5:
-let codigo = `termux-setup-storage
-apt update
-apt upgrade
-pkg install -y git nodejs ffmpeg imagemagick yarn
-git clone https://github.com/GataNina-Li/GataBotLite-MD 
-cd GataBotLite-MD
-yarn install
-npm install
-npm start`
-let codigo2 = `
-heroku/nodejs\n
-https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git\n
-https://github.com/clhuang/heroku-buildpack-webp-binaries.git`
-let codigo3 = `
-git clone https://github.com/GataNina-Li/GataBotLite-MD
-cd GataBotLite-MD
-npm install
-npm update
-node .`
-try{	
-let termux = `*◎ T E R M U X*\n\n${codigo}`
-let replit = `*◎ R E P L I T*\n\nhttps://replit.com/github/GataNina-Li/GataBotLite-MD`
-let heroku = `*◎ H E R O K U*\n\nhttps://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBotMDLite-Heroku`
-let windows = `*◎ W I N D O W S / V P S / R D P*\n
-⎔ _Git_
-https://git-scm.com/downloads
-⎔ _NodeJS_
-https://nodejs.org/en/download
-⎔ _FFmpeg_
-https://ffmpeg.org/download.html
-⎔ _ImageMagick_
-https://imagemagick.org/script/download.php
-⎔ _Yarn_
-https://classic.yarnpkg.com/en/docs/install#windows-stable`
-await conn.reply(m.chat, termux + '\n\n' + replit + '\n\n' + heroku + '\n\n' + windows, fkontak)
-} catch (e) {
-reportError(e)
-}    
-break
-    
+
 case isCommand6:
 try{   
 taguser = conn.getName(m.sender)
@@ -165,25 +68,6 @@ await conn.sendFile(m.chat, pp, 'gata.jpg', aa + bb + ig, fkontak)
 } catch (e) {
 reportError(e)
 }    
-break
-    
-case isCommand7:
-try{
-let txt
-groups = Object.values(await conn.groupFetchAllParticipating())
-txt = `${packname} ${lenguajeGB.smsLisA()}
-${lenguajeGB.smsLisB()} ${groups.length}\n`
-
-for (let i = 0; i < groups.length; i++) {
-txt += ` 
-${lenguajeGB.smsLisC()} ${groups[i].subject}
-${lenguajeGB.smsLisD()} ${groups[i].id}
-${isOwner ? `${lenguajeGB.smsLisE()} ${groups[i].participants.length}` : ''}\n`
-}
-m.reply(txt.trim())
-} catch (e) {
-reportError(e)
-}     
 break
     
 case isCommand8:
@@ -222,35 +106,6 @@ reportError(e)
 break
 
 //CÓDIGO CREADO GRACIAS A https://github.com/Azami19 & https://github.com/GataNina-Li
-case isCommand9:
-try{
-let contact, number, ofc, nombre, description, correo, lugar, enlace, biog
-let biografiaBot = await conn.fetchStatus(conn.user.jid.split('@')[0] + '@s.whatsapp.net').catch(_ => 'undefined')
-let bioBot = biografiaBot.status?.toString() || `${desc2 == '' ? lenguajeGB.smsContacto1() : desc2}`
-let contacts = global.official.filter(c => c[2] === 1)
-let lista = []
-for (let i = 0; i < contacts.length; i++) {
-contact = contacts[i]
-number = String(contact[0])
-ofc = await conn.getName(number + '@s.whatsapp.net') //String(contact[1])
-let biografia = await conn.fetchStatus(number +'@s.whatsapp.net').catch(_ => 'undefined')
-let bio = biografia.status?.toString() || `${desc2 == '' ? lenguajeGB.smsContacto2() : desc2}`
-nombre = official[0][0] == String(contact[0]) ? official[0][1] : official[1][0] == String(contact[0]) ? official[1][1] : official[2][0] == String(contact[0]) ? official[2][1] : official[3][0] == String(contact[0]) ? official[3][1] : lenguajeGB.smsContacto3() 
-description = official[0][0] == String(contact[0]) ? 'Solo temas de GataBot' : official[1][0] == String(contact[0]) ? lenguajeGB.smsContacto4() : official[2][0] == String(contact[0]) ? lenguajeGB.smsContacto4() : official[3][0] == String(contact[0]) ? lenguajeGB.smsContacto4() : desc === '' ? lenguajeGB.smsContacto5() : desc
-correo = official[0][0] == String(contact[0]) ? 'socialplus.gata@gamil.com' : official[1][0] == String(contact[0]) ? 'thelolibotm@gmail.com' : official[2][0] == String(contact[0]) ? 'alexismaldonado90700@gmail.com' : mail === '' ? lenguajeGB.smsContacto6() : mail
-lugar = official[0][0] == String(contact[0]) ? '🇪🇨 Ecuador' : official[1][0] == String(contact[0]) ? '🇦🇷 Argentina' : official[2][0] == String(contact[0]) ? '🇲🇽 México' : official[3][0] == String(contact[0]) ? '🇧🇷 Brazil' : country === '' ? lenguajeGB.smsContacto7() : country
-enlace = official[0][0] == String(contact[0]) ? 'https://github.com/GataNina-Li' : official[1][0] == String(contact[0]) ? 'https://github.com/elrebelde21' : official[2][0] == String(contact[0]) ? 'https://github.com/Azami19' : official[3][0] == String(contact[0]) ? 'https://github.com/Abiguelreyes75' : md    
-lista.push([number, ofc, nombre, description, official[3][0] == String(contact[0]) ? null : correo, lugar, enlace, bio, official[1][0] == String(contact[0]) ? 'https://www.youtube.com/@TheLoliBot-MD' : null]) }  
-lista.push([conn.user.jid.split('@')[0], await conn.getName(conn.user.jid), packname, lenguajeGB.smsContacto8(), mail === '' ? 'centergatabot@gmail.com' : mail, lenguajeGB.smsContacto7(), md, bioBot, yt, ig, fb, paypal, nna])
-await conn.sendContactArray(m.chat, lista, null, { quoted: fkontak })
-/*function handler(m) {
-const data = global.owner.filter(([id, isCreator]) => id && isCreator) 
-this.sendContact(m.chat, data.map(([id, name]) => [id, name]), fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true }}})
-}*/
-} catch (e) {
-reportError(e)
-} 
-break
     
 case isCommand10:
 try {
@@ -309,17 +164,7 @@ await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', caption.trim(), fko
 reportError(e)
 }   
 break
-    
-case isCommand11:
-try { 
-let donar = lenguajeGB.smsMensajeDonar().trim()
-await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', lenguajeGB.smsTituloDonar() + '\n\n' + donar + '\n\n' + paypal + '\n' + ig, fkontak) 
-await conn.reply(m.sender, lenguajeGB.smsPrivadoDonar() + '\n\n' + paypal + '\n' + md, m)
-} catch (e) {
-reportError(e)
-}     
-break
-    
+
 case isCommand12:
 if (!text) return m.reply(lenguajeGB.smsReportGB1(usedPrefix, command))
 if (text.length < 8) return m.reply(lenguajeGB.smsReportGB2())
