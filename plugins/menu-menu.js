@@ -20,7 +20,7 @@ let menu = `*《 @${m.sender.split("@")[0]} 》*
 
 *╭┈🎄┈🎄┈🎄┈🎄┈🎄┈🎄┈╮*
 *┆⠸⋑* ${packname}
-*┆ 🝆 ${vs} ㎇ 🝆 *
+*┆ ${vs} *
 *╰┈🎄┈🎄┈🎄┈🎄┈🎄┈🎄┈╯*${conn.user.jid == global.conn.user.jid ? '' : `🌨️🐈🌨️ *>>* 𝗚𝗕 - 𝗦𝗨𝗕 𝗕𝗢𝗧 ⇢ *@${global.conn.user.jid.split`@`[0]}*`}
 
 *╭●⇢ 🌟 ${lenguajeGB.smsMenuTotal1()} 🌟*
@@ -28,7 +28,6 @@ let menu = `*《 @${m.sender.split("@")[0]} 》*
 *┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'creador' : 'owner'}\`\`\`
 *┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'estadobot' : 'status'}\`\`\`
 *┆* \`\`\`${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'infogata' : 'infobot'}\`\`\`
-*┆* \`\`\`${lenguajeGB.lenguaje() == 'es' ? 'términos y condiciones' : 'terms'}\`\`\`
 *┆*
 *╰:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧:･ﾟ✧ *:･ﾟ✧ *:･ﾟ✧*
 
