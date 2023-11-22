@@ -256,7 +256,7 @@ return false
 }
 m.reply(`${lenguajeGB['smsAvisoEG']()}*•» ${lenguajeGB.smsConfi2bot()}:* ${type}
 *•» ${lenguajeGB.smsConfi3bot()}:* ${isEnable ? lenguajeGB.smsConfi5bot() : lenguajeGB.smsConfi6bot()}
-*•» ${lenguajeGB.smsConfi4bot()}:* ${isAll ? packname : isUser ? '' : '_' + lenguajeGB.smsConfi7bot() + '_'}`)
+
 }
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
 export default handler
