@@ -36,8 +36,7 @@ let info =
 •» ${lenguajeGB['smsGI6']()}
 ・ ${participants.length} ${lenguajeGB['smsGI7']()}
 
-•» ${lenguajeGB['smsGI8']()}
-・ @${owner.split('@')[0]}
+•» ${lenguajeGB['smsGI8']()} @${owner.split('@')[0]}
 
 •» ${lenguajeGB['smsGI9']()}
 ${listAdmin}
