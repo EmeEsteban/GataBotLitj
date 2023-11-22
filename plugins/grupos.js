@@ -27,22 +27,19 @@ listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('
 owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
 let info = 
 `✤ ${lenguajeGB['smsGI1']()} ✤
-⎔ ${lenguajeGB['smsGI2']()}
-・ ${groupMetadata.id}
 
-⎔ ${lenguajeGB['smsGI3']()}
-・ ${groupMetadata.subject}
+•» ${groupMetadata.subject} «•
 
-⎔ ${lenguajeGB['smsGI4']()}
+•» ${lenguajeGB['smsGI4']()}
 ・ ${groupMetadata.desc?.toString() || lenguajeGB['smsGI5']()}
 
-⎔ ${lenguajeGB['smsGI6']()}
+•» ${lenguajeGB['smsGI6']()}
 ・ ${participants.length} ${lenguajeGB['smsGI7']()}
 
-⎔ ${lenguajeGB['smsGI8']()}
+•» ${lenguajeGB['smsGI8']()}
 ・ @${owner.split('@')[0]}
 
-⎔ ${lenguajeGB['smsGI9']()}
+•» ${lenguajeGB['smsGI9']()}
 ${listAdmin}
 `.trim()
   
