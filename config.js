@@ -91,7 +91,7 @@ global.official = [
 ['Agradecimiento especial a GataDios por GataBotMD'],
 
 global.mail = '' //agrega tú correo
-global.desc = '' //agrega una descripción corta
+global.desc = 'd' //agrega una descripción corta
 global.desc2 = '' //agrega una descripción larga (Solo se aplicará si su whasapp no tiene descripción)
 global.country = 'CL' //agrega tú país ejemplo: 🇪🇨
 
